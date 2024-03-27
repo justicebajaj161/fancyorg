@@ -111,7 +111,8 @@ const registeruser = async (req, res) => {
         pass: apiNodemailerPass,
       },
     });
-
+    
+console.log("first")
     const link = `${process.env.BASE_URL}/api/auth/confirm/${token.emailToken}`;
 const mailOptions = {
   from: apiNodemailerUser,
